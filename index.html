@@ -1519,6 +1519,16 @@ Certified Nutritionist</textarea>
     </div>
 
     <script>
+        window.addEventListener('DOMContentLoaded', function() {
+  const popup = document.getElementById('fullscreen-popup');
+  if (popup) {
+    popup.style.display = 'flex';
+    setTimeout(() => {
+      popup.style.display = 'none';
+    }, 2000);
+  }
+});
+        
         // Static Datasets
         const patients = [
             { id: 'P001', name: 'Anita Sharma', age: 34, gender: 'Female', contact: '+91 9876543210', lastVisit: '15 Jun 2023', status: 'Active' },
@@ -2001,5 +2011,6 @@ Certified Nutritionist</textarea>
 </body>
 </html> 
                 
+
 
 
